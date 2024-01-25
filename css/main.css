@@ -1,0 +1,645 @@
+/* FONTS */
+
+/* ROOT */
+:root {
+  /* colors */
+  --colorPrimary: #fff;
+  --colorSecondary: #333;
+  /* backgrounds */
+  --backgroundPrimary: #BB2339;
+  --backgroundSecondary: #fff;
+  /* btn colors */
+  /* --btnColor: #fff;
+  --btnHover: #BB2339;
+  --btnDisabled: #fff; */
+  /* fonts */
+  --fontFamily: open, sans-serif;
+  --fontWeight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: #646464; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--'Open Sans', sans-serif) ;
+  /* font-family: var(--'Montserrat', sans-serif); */
+  
+}
+
+/* .visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+} */
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width:1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+/* ----------------------------------HEADER STYLE START----------------------------------- */
+.site-header{
+  padding:  26px 0 ;
+
+
+  background: var(--backgroundPrimary);
+  
+} 
+.hero-img{
+  margin-left: 100px;
+  position: relative;
+  bottom: 60px;
+  }
+
+
+.header-wrapper{
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header__nav{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.site-header__nav-list{
+  display: flex;
+  gap: 40px;
+  
+}
+.site-header__nav-link{
+  color: var(--backgroundSecondary);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.64px;
+}
+.site-header__nav-btn{
+  padding: 10px 40px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  color:var(--backgroundSecondary);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ----------------------------------HEADER STYLE END----------------------------------- */
+
+/* ------------------------------------------HERO STYLE STSRT--------------------------------------------- */
+.hero{
+  width: 100%;
+  padding: 144px 0;
+  background-color: var(--backgroundPrimary);
+ 
+
+}
+.hero-wrapper{
+  display: flex;
+ 
+}
+.hero-text__desc{
+  padding-bottom: 8px;
+  color: #FFF;
+font-family:"open sans";
+font-size: 23px;
+font-weight: 700;
+line-height: 130%; 
+}
+.hero-text__title{
+  padding-bottom: 20px;
+  width: 555px;
+  color: #FFF;
+font-family: var(--fontFamily);
+font-size: 90px;
+font-weight: 700;
+line-height: 130%; 
+ 
+}
+.hero-desc{
+  width: 453px;
+  color: #FFF;
+  padding-bottom: 48px;
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 175%; 
+letter-spacing: 0.64px;
+}
+.hero-link{
+  color: #FFF;
+font-family: "open sans";
+font-size: 16px;
+font-weight: 700;
+line-height: 175%; 
+letter-spacing: 0.64px;
+padding: 10px 30px;
+align-items: center;
+border-radius: 100px;
+border: 1px solid #FFF;
+}
+.hero-img__scroll{
+  padding-left:94%;
+  width: 63px;
+  margin-bottom: 10px;
+  height: 113px;
+}
+.hero-scroll__svg{
+  padding-left: 30px;
+  
+}
+
+
+
+
+.hero-scroll__text{
+  width: 63px;
+  height: 28px;
+  position: relative;
+  top: 20px;
+  color: #FFF;
+
+font-family: "open sans";
+font-size: 16px;
+font-weight: 700;
+line-height: 175%; 
+letter-spacing: 0.64px;
+}
+
+
+/* ------------------------------------------HERO STYLE END--------------------------------------------- */
+
+/* ------------------------------------------SECTION POPULAR STYLE START--------------------------------------------- */
+.section-popular{
+   padding: 120px 0;
+  background: #F8F8F8;;
+}
+ .popular-btn__one{
+  position: relative;
+  right: 20px;
+  }
+.section-popular__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-title{
+  color: var(--backgroundPrimary);
+  margin-bottom: 40px;
+font-family: "open sans";
+font-size: 48px;
+font-weight: 700;
+letter-spacing: 1.44px;
+}
+ 
+
+ .popular-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+ }
+ .popular-item{
+  background:#FFFFFF;
+ }
+ .popular-item{
+   
+  width: 310px;
+  height: 396px;
+ background-color:  #FFFFFF;
+ }
+ .popular-text__title-shshlik{
+  width: 270px;
+   margin-left: 16px;
+  color: #242424;
+text-align: center;
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+ }
+ .popular-shashlik__sum{
+  color: var(--qizil, #BB2339);
+  position: relative;
+  top: 40px;
+ text-align: center;
+font-family: "Open Sans";
+font-size: 24px;
+font-weight: 700;
+ }
+ .popular-shashlik__img{
+  margin-top: 20px;
+  position: relative;
+  left: 100px;
+   }
+
+/* ------------------------------------------SECTION POPULAR STYLE END--------------------------------------------- */
+   /* ---------------------------------SECTION MENU STYLE START ------------------------------------------ */
+  .section-menu{
+    background: #FFFFFF;
+  padding-top: 120px 0;
+  }
+
+   .menu-title__wrapper{
+    display: flex;
+    justify-content: space-between;
+  padding-left: 310px;
+ }
+ .menu-title{
+  color: #BB2339;
+font-family: "open sans";
+font-size: 48px;
+font-weight: 500;
+ }
+ .menu-title__logo{
+  position: relative;
+  bottom: 169px;
+  right: 310px;
+  }
+
+
+  .section-menu__nav-wrapper{
+    padding-left: 310px;
+  }
+  .section-menu__list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-menu__link{
+    color: #242424;
+font-family: "Open Sans";
+font-size: 16px;
+font-weight: 600;
+line-height: 175%;  
+letter-spacing: 0.8px;
+
+display: flex;
+padding: 10px 30px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+border-radius: 100px;
+border: 1px solid var(--qizil, #BB2339);
+background: #FFF;
+  }
+  .section-menu__link:hover{
+   background-color: #BB2339;
+   color: #fff;
+  }
+  .section-menu__nav{
+    padding-top: 30px;
+  }
+
+
+  .section-menu__shashlik-wrapper{
+    padding: 50px 0;
+  }
+
+  .menu-shashlik__list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 20px;
+   }
+   .menu-shashlik__item{
+    width: 310px;
+    height: 366px;
+    border-radius: 14px;
+border: 1px solid rgba(36, 36, 36, 0.10);
+background: #FFF;
+   }
+   .menu-shashlik__desc{
+    padding: 0 20px 30px 20px;
+    color: #242424;
+text-align: center;
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+   }
+   .menu-shashlik__link{
+    padding:0 117px 40px 117px;
+    color:#BB2339;
+text-align: center;
+font-family: "Open Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+   }
+   .menu-shashlik__img{
+    padding: 20px 20px 10px 20px;
+   }
+
+
+   /* ---------------------------------SECTION MENU STYLE END ------------------------------------------ */
+
+   /* ---------------------------------SECTION HAPPY STYLE START ------------------------------------------ */
+     .section-happy{
+      background: #FFF;
+     }
+   .happy-title__text-wrapper{
+    
+    padding-top: 100px;
+      padding-left: 751px;
+      width: 418px;
+      height: 100%;
+      align-items: center;
+      align-content: baseline;
+    }
+    .section-happy__wrapper{
+      background: #F4F4F4;;
+    }
+
+   .happy-text{
+    padding: 0px 0 8px 130px;
+      color: #242424;
+font-family: "open sans";
+font-size: 23px;
+font-weight: 700;
+line-height: 130%;  
+letter-spacing: 0.92px;
+   }
+   .happy-text__icon{
+    padding: 0 0px 8px 170px;
+   }
+   .happy-title{
+    width: 418px;
+    height: 62px;
+    align-items: center;
+    padding: 0 751px 60px 751px;
+    color: #242424;
+font-family: "open sans";
+font-size: 43px;
+font-weight: 400;
+line-height: 130%; 
+letter-spacing: 1.44px;
+   }
+   .text-maria__title{
+    padding-top: 30px;
+    padding-left: 20px;
+    color: #333;
+font-family: "open sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; 
+   }
+   .text-maria__desc{
+    width: 340px;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: #333;
+font-family: "open sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; 
+   }
+   .text-maria__list{
+    padding: 60px 0;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .text-maria__item{
+    gap: 10px;
+    width: 410px;
+    height: 198px;
+    border-radius: 10px;
+border: 1px solid rgba(51, 51, 51, 0.10);
+background: #FFF;
+   }
+
+   data{
+    gap: 10px;
+    margin-left: 5px;
+     color: #333333;
+   }
+   .maria-data__wrapper{
+    padding-top: 25px;
+    padding-left: 20px;
+   }
+   .maria__icon{
+    padding-left: 10px;
+   }
+   pre{
+    color: #242424;
+font-variant-numeric: lining-nums tabular-nums;
+font-family: "Cera Round Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 175%; /* 28px */
+letter-spacing: 0.64px;
+text-transform: capitalize;
+   }
+   
+   .pre::after {
+    margin-left: 8px;
+     content: "";
+     display: inline-block;
+     width: 16px;
+     height: 1px;
+    background: #242424;
+    position: relative;
+    right: 104px;
+    bottom: 5px;
+   
+  
+   }
+   .happy__icon-wrapper{
+    display: flex;
+    align-items: center;
+    padding-left: 820px;
+    padding-bottom: 90px;
+    gap: 20px;
+   }
+
+   /* ---------------------------------SECTION HAPPY STYLE END ------------------------------------------ */
+   /* ---------------------------------SECTION UPDATES STYLE START ------------------------------------------ */
+       
+   .updates{
+      color: #BB2339;
+     }
+     .news{
+      position: relative;
+      left: 23px;
+     }
+     .section-updates{
+      background-color: #FFF;
+     }
+     .updates-data__wrapper{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      padding: 0 30px 20px 20px;
+     }
+   
+     .updates-text{
+      padding: 20px 0 10px 20px;
+      color: #242424;
+font-variant-numeric: lining-nums tabular-nums;
+font-family: "Cera Round Pro";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 133.333% */
+text-transform: capitalize;
+     }
+     .updates-desc{
+      padding: 20px;
+      width: 360px;
+      color: var(--AAAAAA, #AAA);
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+     }
+     .updates-p{
+      color: var(--qizil, #BB2339);
+font-family: "Cera Round Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.64px;
+     }
+     .updates-data{
+      color: #242424;
+
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+     }
+     .updates-list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+     }
+     .updates__wrapper{
+      padding: 60px 310px;
+     }
+     .updates-item{
+      border-radius: 14px;
+border: 1px solid rgba(36, 36, 36, 0.10);
+background: #FFF;
+     }
+     .updates-btn{
+      position: relative;
+      left: 892px;
+      margin-bottom: 128px;
+      color: #242424;
+
+font-family: "Cera Round Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 175%;  
+letter-spacing: 0.64px;
+display: inline-flex;
+padding: 8px 32px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+border: 1px solid var(--qizil, #BB2339);
+     }
+     .update-btn:hover{
+      color: #FFF;
+      background: #BB2339;
+     }
+   /* ---------------------------------SECTION UPDATES STYLE END ------------------------------------------ */
+   
+   /* ---------------------------------SECTION INSTAGARM STYLE START ------------------------------------------ */
+     .insta-section{
+      padding: 120px 0 ;
+      background: #f4f4f4;
+     }
+
+     .insta__title-one{
+      color: #242424;
+font-variant-numeric: lining-nums tabular-nums;
+font-family: "Cera Round Pro";
+font-size: 23px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%;  
+letter-spacing: 0.92px;
+text-transform: capitalize;
+     }
+     .insta-galary{
+      color: #242424;
+text-align: center;
+font-variant-numeric: lining-nums tabular-nums;
+font-family: "Cera Round Pro";
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; 
+letter-spacing: 1.44px;
+text-transform: capitalize;
+     }
+     .insta-desc{
+      color: #AAA;
+
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 175%; 
+letter-spacing: 0.64px;
+     }
+
+     .insta-wrapper{
+      width: 491px;
+      height: 295px;
+     }
+     .xcc{
+      position: relative;
+      right: 300px;
+     }
+   /* ---------------------------------SECTION INSTAGARM STYLE END ------------------------------------------ */
+
